@@ -1,0 +1,38 @@
+First Step
+    1. Install angular material
+    2. install highcharts packages
+    3. install Flex layout packages
+
+    for installing flex layout in angular 8.3, I need to install flex-layout version 8 from command "npm i @angular/flex-layout@8.0.0-beta.27"
+
+
+layout Definition
+    1. Create the first layout.
+    2. Create component for the Dashboard page.
+    3. Use the first layout as a Parent route component in app-routing.module.ts and Dashboard page as child Component.
+
+    ng g c layout/default
+    ng g m layout/default
+    ng g c modules/dashboard
+
+Shared module
+    Create Shared Module for Header, Sidebar and Footer for better code organization.
+    Learn more about Shared Module here: https://angular.io/guide/sharing-ngmodules
+
+    1. Create your Header, Sidebar and Footer Components.
+    2. Create Shared Module for it.
+    3. Update the Module and add these Components in the Declaration and Export section.
+
+        ng g c shared/components/header
+        ng g c shared/components/footer
+        ng g c shared/components/sidebar
+        ng g m shared
+        ng g c modules/posts
+
+        ng g c shared/widgets/area
+        ng g c shared/widgets/card
+        ng g s modules/dashboard
+
+
+
+
